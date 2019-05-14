@@ -21,22 +21,10 @@ spring:
       #  最长等待时间
       max-wait: -1
 
-    datasource:
-      url: jdbc:mysql://localhost:3306/hotel?useUnicode=true&serverTimezone=Asia/Shanghai
-      username: root
-      password: password
-      driver-class-name: com.mysql.cj.jdbc.Driver
-        #----durid info ---
-        type: com.alibaba.druid.pool.DruidDataSource
-      #----addtion info --
-    dbcp:
-      max-active: 1000
-      initial-size: 100
-      min-idle: 500
-      max-wait: 60000
-      time-between-eviction-runs-millis: 60000
-      min-evictable-idle-time-millis: 300000
-      validation-query: select 1 from dual
-      test-while-idle: true
-      test-on-borrow: false
-      test-on-return: false
+  datasource:
+    url: jdbc:mysql://localhost:3306/hotel?useUnicode=true&serverTimezone=Asia/Shanghai
+    username: root
+    password: password
+    driver-class-name: com.mysql.cj.jdbc.Driver
+      #----durid info ---
+      type: com.alibaba.druid.pool.DruidDataSource
