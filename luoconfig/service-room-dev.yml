@@ -4,4 +4,4 @@ eureka:
     lease-renewal-interval-in-seconds: 5 # 心跳时间，表示eureka client发送心跳给eureka server端的频率（缺省为30s）
   client:
     service-url:
-      defaultZone: http://server.eureka.slave1.com:18761/eureka,http://server.eureka.slave2.com:28761/eureka # 指定eureka服务器集群列表地址
+      defaultZone: http://server.eureka.slave1.com:18761/eureka,http://server.eureka.slave2.com:28761/eureka # 指定eureka服务器集群列表地址.
