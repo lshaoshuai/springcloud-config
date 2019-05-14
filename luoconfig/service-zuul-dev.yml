@@ -2,13 +2,9 @@
 # API网关配置
 zuul:
   routes:
-    api-user:
+    api-room:
       path: /api-room/** # /api-user开头的请求，全部转发到sea-service-user服务中去
       service-id: hms-service-room # 应用名称
-    api-shop:
-      path: /api-shop/** # /api-shop开头的请求，全部转发到sea-web-shop服务中去
-      service-id: sea-web-shop # 应用名称
-  sensitive-headers:
 
 eureka:
   instance:
